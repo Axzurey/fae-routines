@@ -22,7 +22,7 @@
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
-    "typescript": "^4.8.2",
+    "typescript": "^4.9.1-beta",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -56,7 +56,7 @@
     ]
   },
   "devDependencies": {
-    "@types/gapi.client.youtube": "^3.0.3",
+    "@babel/parser": "^7.20.3",
     "@types/styled-components": "^5.1.26",
     "concurrently": "^7.3.0",
     "cross-env": "^7.0.3",
