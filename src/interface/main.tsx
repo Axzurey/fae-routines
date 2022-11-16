@@ -19,14 +19,14 @@ export function MainInterface() {
             path: 'C:/Users/me/Program Files/poop.bat',
             args: ['%x', '%h']
         },
-    ] satisfies RoutineType[]
+    ] as RoutineType[];
 
     return <Box
         width='100vw'
         height='100vh'
         bg={colors.background}
     >
-        <VStack width='100%' height='80vh'>
+        <VStack pl='20%' width='80%' height='80vh'>
             {
                 testData.map((v) => 
                     (<RoutineDisplay routine={v}></RoutineDisplay>)

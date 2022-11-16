@@ -1,5 +1,6 @@
-import { Box } from "@chakra-ui/react";
-
+import { Spacer, Text } from "@chakra-ui/react"
+import { MotionBox } from "../components/MotionBox"
+import { colors } from "../theme"
 /**
  * format for runsAt is as follows:
  * 
@@ -31,7 +32,12 @@ interface RoutineDisplayProps {
 }
 
 export function RoutineDisplay(props: RoutineDisplayProps) {
-    return <Box width='600px' height='65px' bg='blackAlpha.600'>
-        <Box bg='#66FF66' width='2%' height='100%'></Box>
-    </Box>
+    return <MotionBox display='flex' width='100%' minHeight='7vh' maxHeight='8vh' bg='blackAlpha.600'>
+        <MotionBox bg='#66FF66' width='2%' height='100%'>
+            
+        </MotionBox>
+        <Text pl='1%' color={colors.primaryText}>
+            {props.routine.name}
+        </Text>
+    </MotionBox>
 }
